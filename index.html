@@ -14,7 +14,64 @@
       <div class="container d-flex justify-content-center align-items-">
         <div class="row mx-auto g-5 mt-1 mb-3">
           <div class="col-md-4">
-            
+            <div class="formgroup shadow bg-white rounded p-3 h-100">
+              <div class="form_caption text-center">
+                <h3>Enter Your Products Here</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="form_inputs m-3 p-2">
+                <div class="form-floating my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="productName"
+                    placeholder="Samsung"
+                  />
+                  <label for="productName">Product Name</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="productPrice"
+                    placeholder="0000$"
+                  />
+                  <label for="productPrice">Product Price</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="productCategory"
+                    placeholder="Mobile"
+                  />
+                  <label for="productCategory">Product Category</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="productDescription"
+                    placeholder="Good."
+                  />
+                  <label for="productDescription">Product Description</label>
+                </div>
+                <button
+                  class="btn btn-dark my-2 form-control d-block"
+                  id="addProductBtn"
+                  onclick="addProduct()"
+                >
+                  Add
+                </button>
+                <button
+                  class="btn btn-outline-dark my-2 form-control d-none"
+                  id="updateProductBtn"
+                  onclick="updateProduct()"
+                >
+                  Update
+                </button>
+              </div>
+            </div>
           </div>
           <div class="col-md-8 table-items shadow bg-white rounded p-3">
             <div class="search_box">
