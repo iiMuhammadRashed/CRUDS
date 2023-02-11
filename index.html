@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CRUDS</title>
+  </head>
+  <body>
+    <div class="home">
+      <div class="container d-flex justify-content-center align-items-">
+        <div class="row mx-auto g-5 mt-1 mb-3">
+          <div class="col-md-4">
+            
+          </div>
+          <div class="col-md-8 table-items shadow bg-white rounded p-3">
+            <div class="search_box">
+              <div class="form-floating my-3">
+                <input
+                  type="text"
+                  class="form-control productSearch"
+                  oninput="searchBox(this.value)"
+                  id="productSearch"
+                />
+                <label for="productSearch"
+                  >Search by name ...
+                  <i class="fa-regular fa-magnifying-glass fa-sm"></i
+                ></label>
+              </div>
+            </div>
+            <div class="products_table">
+              <table
+                class="table table-striped table-hover text-center table-responsive-md table"
+              >
+                <thead class="fw-bold">
+                  <tr>
+                    <td>Index</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Category</td>
+                    <td>Description</td>
+                    <td>Update</td>
+                    <td>Delete</td>
+                  </tr>
+                </thead>
+                <tbody id="productContainer"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
